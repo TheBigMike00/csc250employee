@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="false"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter Employee Info Below"
+            android:textSize="24sp"
+            tools:text="Enter Employee Info Below" />
+
+        <EditText
+            android:id="@+id/inputfnET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Employee First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/inputlnET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Employee Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/inputageET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Employee Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputhET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Employee Height (Inches)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/inputwET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Emplyee Weight (lbs)"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="onButtonPressed"/>
+
+        <TextView
+            android:id="@+id/enteredInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:text="Entered Employee" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
